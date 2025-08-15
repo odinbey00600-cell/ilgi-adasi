@@ -4,8 +4,9 @@
   "id": "/?bilgi-adasi-1",
   "start_url": ".",
   "scope": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "display_override": [
+    "fullscreen",
     "standalone"
   ],
   "background_color": "#81d4fa",

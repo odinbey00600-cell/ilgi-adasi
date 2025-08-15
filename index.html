@@ -631,7 +631,17 @@
             updateUIText();
             showScreen('name-screen');
         });
-
+// --- PWA Service Worker Kaydı ---
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').then(registration => {
+                    console.log('SW kaydı başarılı: ', registration);
+                }).catch(registrationError => {
+                    console.log('SW kaydı başarısız: ', registrationError);
+                });
+            });
+        }
     </script>
 </body>
 </html>
+

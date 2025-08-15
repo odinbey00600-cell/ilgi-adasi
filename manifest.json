@@ -3,10 +3,14 @@
   "short_name": "Bilgi Adası",
   "id": "/?bilgi-adasi-1",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
   "background_color": "#81d4fa",
   "theme_color": "#4285f4",
-  "description": "Çocuklar için eğlenceli ve eğitici bilgi yarışması.",
+  "description": "Çocuklar için eğenceli ve eğitici bilgi yarışması.",
   "launch_handler": {
     "client_mode": "focus-existing"
   },
